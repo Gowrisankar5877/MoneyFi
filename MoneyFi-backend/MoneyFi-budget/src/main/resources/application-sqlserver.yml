@@ -3,9 +3,9 @@ spring:
     name:
       MoneyFi-budget
   datasource:
-    url: jdbc:sqlserver://${RDS_HOSTNAME:localhost}:${RDS_PORT:1433};databaseName=${RDS_DB_NAME:moneyfi_db};encrypt=true;trustServerCertificate=true
-    username: ${RDS_USERNAME:sa}
-    password: ${RDS_PASSWORD:admin@123}
+    url: jdbc:sqlserver://gowri5877server.database.windows.net:1433;database=moneyfi_db;user=gowri@gowri5877server;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    # username: ${RDS_USERNAME:sa}
+    # password: ${RDS_PASSWORD:admin@123}
 
   jpa:
     hibernate:
