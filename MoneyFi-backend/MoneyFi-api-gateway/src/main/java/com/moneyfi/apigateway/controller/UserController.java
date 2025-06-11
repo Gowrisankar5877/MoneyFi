@@ -13,7 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin("http://20.53.25.131")
 @RequestMapping("/api/auth")
 public class UserController {
 

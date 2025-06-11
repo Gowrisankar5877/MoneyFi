@@ -3,9 +3,10 @@ spring:
     name:
       MoneyFi-expense
   datasource:
-    url: jdbc:sqlserver://${RDS_HOSTNAME:localhost}:${RDS_PORT:1433};databaseName=${RDS_DB_NAME:moneyfi_db};encrypt=true;trustServerCertificate=true
-    username: ${RDS_USERNAME:sa}
-    password: ${RDS_PASSWORD:admin@123}
+    url: jdbc:sqlserver://gowri5877server.database.windows.net:1433;database=moneyfi_db;user=gowri@gowri5877server;password=Pp@029833;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+#    url: jdbc:sqlserver://${RDS_HOSTNAME:localhost}:${RDS_PORT:1433};databaseName=${RDS_DB_NAME:moneyfi_db};encrypt=true;trustServerCertificate=true
+#    username: ${RDS_USERNAME:sa}
+#    password: ${RDS_PASSWORD:admin@123}
 
   jpa:
     hibernate:
@@ -17,3 +18,7 @@ spring:
 server:
   port:
     8200
+eureka:
+  client:
+    service-url:
+      defaultZone: http://20.248.125.223:8761/eureka

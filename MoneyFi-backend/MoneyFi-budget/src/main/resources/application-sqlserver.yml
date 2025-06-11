@@ -3,7 +3,7 @@ spring:
     name:
       MoneyFi-budget
   datasource:
-    url: jdbc:sqlserver://gowri5877server.database.windows.net:1433;database=moneyfi_db;user=gowri@gowri5877server;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    url: jdbc:sqlserver://gowri5877server.database.windows.net:1433;database=moneyfi_db;user=gowri@gowri5877server;password=Pp@029833;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
     # username: ${RDS_USERNAME:sa}
     # password: ${RDS_PASSWORD:admin@123}
 
@@ -17,3 +17,11 @@ spring:
 server:
   port:
     8300
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://20.248.125.223:8761/eureka
+  instance:
+    prefer-ip-address: true

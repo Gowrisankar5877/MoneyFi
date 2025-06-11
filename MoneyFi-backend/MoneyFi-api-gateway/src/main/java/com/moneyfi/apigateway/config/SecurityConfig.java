@@ -62,7 +62,7 @@ public class SecurityConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.addAllowedOriginPattern("http://localhost:4200"); // Allow all origins, you can replace "*" with your client URL
+        config.addAllowedOriginPattern("http://20.53.25.131"); // Allow all origins, you can replace "*" with your client URL
         config.addAllowedHeader("*"); // Allow all headers
         config.addAllowedMethod("*"); // Allow all HTTP methods (GET, POST, etc.)
         source.registerCorsConfiguration("/**", config);
